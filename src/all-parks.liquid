@@ -1,0 +1,16 @@
+---
+layout: base
+title: All Parks
+---
+
+<body>
+<h1> Find any National Park Here!</h1>
+    <a href="/">Home Page</a>
+    <ul class="parks-list">
+        {% for park in collections.parks %}
+        <li>
+            <a href="{{ park.url }}">{{ park.data.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>

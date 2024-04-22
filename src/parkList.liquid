@@ -1,0 +1,17 @@
+
+<ul>
+    {% for park in parks %}
+    <li>
+        <h2>{{ park.fullName }}</h2>
+        <p>{{ park.description }}</p>
+        <p>Park Code: {{ park.parkCode }}</p>
+        {% if park.images.size > 0 %}
+        <img src="{{ park.images[0].url }}" alt="{{ park.images[0].caption }}">
+        <p>Image Credit: {{ park.images[0].credit }}</p>
+        <p>Image Caption: {{ park.images[0].caption }}</p>
+        {% endif %}
+        <a href="{{ park.url }}">Visit Parks Website</a>
+    </li>
+    {% endfor %}
+</ul>
+

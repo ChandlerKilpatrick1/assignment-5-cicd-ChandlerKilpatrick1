@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    margin: 5;
+    background-color: lightgray;
+    color: black;
+}
+p{
+    padding: 5px;
+}
+h1{ 
+    text-align: center;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+
+
+/* For the INDEX Page */
+.assignment_links ul {
+    background-color: white; 
+    margin-bottom: 5px; 
+    padding: 5px; 
+}
+
+.assignment_links li {
+    /* display: flex;
+    flex-wrap: nowrap;  */
+    background-color: white; 
+    margin-bottom: 5px; 
+    padding: 5px; 
+    border-radius: 5px; 
+    gap: 5px;
+    max-width: 95%;
+}
+
+
+/* For the park list Page */
+.parks-list {
+    padding: 5;
+}
+
+.parks-list li {
+    min-width: 150px;
+}
+
+.parks-list li a {
+    color: green;
+}
+
+
+
+/* For the park pages */
+
+.park_description{
+    text-align: center; 
+    background-color: white; 
+    max-width: 90%;
+    margin: 10px auto; 
+}
+
+body.individual-park {
+    max-width: 90%;
+    /* align-content: center; */
+    margin: auto;
+    padding: 20px;
+}
+
+.park_images {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    align-items: center; 
+    left-padding: 5; 
+    gap: 5px;
+    list-style: none;
+    max-width: 95%;
+    /* margin: 2%; */
+}
+
+.park_images li img{
+    margin: 0 10px; 
+    max-width: 100%; 
+}
+
+.park_images li a {
+    max-width: 100%; 
+    height: auto;
+}
+
+
+
+/* For the Park Info Section */
+ul {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 5%;
+    gap: 8%; 
+}
+li {
+    flex: 1; 
+    min-width: 250px;
+    background-color: white;
+    padding: 3%;
+    margin-top: 5px;
+}
+img {
+    max-width: 100%; 
+    height: auto;
+
+}
+

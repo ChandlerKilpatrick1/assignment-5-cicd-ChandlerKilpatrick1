@@ -1,0 +1,33 @@
+---
+layout: base.liquid
+title: "Massachusetts Parks"
+---
+
+<body>
+    <h1>Massachusetts Parks</h1>
+    <a href="/">Home Page</a>
+<main>
+    {% render "parkList.liquid" with massachusetts.data as parks%}
+</main>
+</body>
+
+
+<!-- <body>
+    <main>
+        <h1>Mass Parks</h1>
+        <ul>
+            {% for park in massachusetts.data %}
+            <li>
+                <h2>{{ park.fullName }}</h2>
+                <p>{{ park.description }}</p>
+                <p>Park Code: {{ park.parkCode }}</p>
+                <img src="{{ park.images[0].url }}">
+                <p>Image Credit: {{ park.images[0].credit }}</p>
+                <p>Image Caption: {{ park.images[0].caption }}</p>
+                <a href="{{ park.url }}">Visit Parks Website</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/">Home Page</a>
+    </main>
+</body> -->

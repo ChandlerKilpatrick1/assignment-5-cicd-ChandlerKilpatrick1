@@ -1,0 +1,54 @@
+---
+title: Parks
+layout: base.liquid
+pagination: 
+  data: parks.data
+  size: 1
+  alias: park
+  addAllPagesToCollections: true
+permalink: "parks/{{ park.id }}/"
+tags:
+  - "parks"
+eleventyComputed:
+  title: "{{ park.fullName }}"
+---
+
+<body class="individual-park">
+  <a href="/all-parks">Back to All Parks</a>
+
+  <h1>{{ park.fullName }}</h1>
+
+  <div class="park_description">
+    <p >{{ park.description }}</p>
+    <p >Park Code: {{ park.parkCode }}</p>
+    <a href="{{ park.url }}">Visit Parks Website for more information</a>
+  </div>
+
+  <ul class="park_images">
+    <li >
+        <!-- Image ONE -->
+        <img src="{{ park.images[0].url }}">
+        <p>Image Credit: {{ park.images[0].credit }}</p>
+        <p>Image Caption: {{ park.images[0].caption }}</p>
+    </li>
+    <li >
+        <!-- Image TWO -->
+        <img src="{{ park.images[1].url }}">
+        <p>Image Credit: {{ park.images[1].credit }}</p>
+        <p>Image Caption: {{ park.images[1].caption }}</p>
+    </li>
+    <li >
+        <!-- Image THREE -->
+        <img src="{{ park.images[2].url }}">
+        <p>Image Credit: {{ park.images[2].credit }}</p>
+        <p>Image Caption: {{ park.images[2].caption }}</p>
+    </li>
+    <li >
+      <!-- Image FOUR -->
+      <img src="{{ park.images[3].url }}">
+      <p>Image Credit: {{ park.images[3].credit }}</p>
+      <p>Image Caption: {{ park.images[3].caption }}</p>
+    </li>
+
+    </ul>
+</body>
