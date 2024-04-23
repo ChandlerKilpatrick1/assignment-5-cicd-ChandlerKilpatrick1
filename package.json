@@ -4,7 +4,8 @@
   "description": "This purpose of this assignment is to become familiar with Eleventy (11ty).  You'll get 11ty up and running from scratch and use some key features, including using data from APIs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "eleventy",
+    "test": "mocha",
     "build": "eleventy",
     "start": "eleventy --serve"
   },
@@ -13,7 +14,9 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "globals": "^15.0.0",
+    "mocha": "^10.4.0"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.0"
