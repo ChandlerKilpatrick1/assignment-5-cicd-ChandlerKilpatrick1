@@ -39,8 +39,10 @@ jobs:
           node-version: '16'
       - name: CI
         run: npm ci
-      - name: Build Project
-        run: npm run build
+      # - name: Build Project
+      #   run: npm run build
+      - name: Install Netlify CLI
+        run: npm install netlify-cli -g
       - name: Deploy to Netlify
         run: npx netlify deploy --prod --dir=dist
         env:
