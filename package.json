@@ -16,9 +16,11 @@
     "@11ty/eleventy": "^2.0.1",
     "dotenv": "^16.4.5",
     "globals": "^15.0.0",
-    "mocha": "^10.4.0"
+    "mocha": "^10.4.0",
+    "netlify-cli": "^17.22.1"
   },
   "dependencies": {
-    "@11ty/eleventy-fetch": "^4.0.0"
+    "@11ty/eleventy-fetch": "^4.0.0",
+    "node-fetch": "^3.3.2"
   }
 }
